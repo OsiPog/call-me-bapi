@@ -1,21 +1,26 @@
 <html>
     <body>
         <span>Base URL: </span><input id="base" style="width:50%"></input>
-        <input type="button" id="setup-oauth" value="Setup OAuth"></input>
+        <a href="oauth.html">Setup OAuth</a>
         <br/>
         <br/>
         <span>Method: </span>
         <select id="method">
-            <option value="get">GET</option>
-            <option value="post">POST</option>
-            <option value="put">PUT</option>
-            <option value="delete">DELETE</option>
+            <option>GET</option>
+            <option>POST</option>
+            <option>PUT</option>
+            <option>DELETE</option>
         </select>
         <span>Route: </span><input id="route" style="width:50%"></input>
         <input type="button" id="send" value="Send"></input>
         <br/>
         <br/>
+        <span>Data (JSON): </span><input id="data" style="width:50%"></input>
+        <br/>
+        <br/>
         <p>Result (use network tab for better analysis):</p>
-        <p></p>
+        <p id="result"></p>
+
+        <script src="index.js" type="module"></script>
     </body>
 </html>
